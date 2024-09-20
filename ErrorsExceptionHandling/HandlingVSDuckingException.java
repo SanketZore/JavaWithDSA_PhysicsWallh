@@ -45,7 +45,7 @@ public class HandlingVSDuckingException {
 		try {
 			obj.a();			
 		}catch(Exception e){
-			System.out.println("Error"+e.getMessage());
+			System.out.println("Error "+e.getMessage());
 		}
 	
 	}

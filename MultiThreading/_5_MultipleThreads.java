@@ -6,7 +6,7 @@ class Demo{
 	
 }
 
-//class Calc extends Thread,Demo{  // this is not possible, restricted by extending.
+//class Calc extends Thread,Demo{  // this is not possible, restricted by extending, only one extend is possible.
 	class Calc extends Thread{
 	public void run() {
 		System.out.println("Calculation Task Started");
@@ -14,18 +14,17 @@ class Demo{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Please enter first number");
 		int num1=sc.nextInt();
-		System.out.println("Please enter second"
-				+ " number");
+		System.out.println("Please enter second number");
 		int num2=sc.nextInt();
 		
 		int res=num1+num2;
-		
-		System.out.println("Calculation Task Eneded");
+		System.out.println("Result : "+res);
+		System.out.println("Calculation Task Ended");
 		System.out.println("****************************");
 		System.out.println("Printing * Task Started");
 		
 		for(int i=0;i<4;i++) {
-			System.out.println("*");
+			System.out.println("*");		 
 		}
 		
 		System.out.println("Printing * Task Ended");

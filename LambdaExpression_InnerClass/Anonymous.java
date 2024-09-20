@@ -1,6 +1,10 @@
 package LambdaExpression_InnerClass;
 
 
+/*
+ when class or interface will be used in entire program only once then we use Anonymous class. 
+ */
+
 interface Car{
 	
 	void drive();

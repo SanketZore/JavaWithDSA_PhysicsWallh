@@ -7,17 +7,15 @@ import abstractionAndAbstract.abstraction;
  
  Why to use lambda Expression.
  - To provide the implementation of Functional Interface.
- -Less Coding.
- -Lambda expression is treated itself as a function.
+ - Less Coding.
+ - Lambda expression is treated itself as a function.
  */
 
 
 
 //@FunctionalInterface
 interface Car1{
-	
 	void drive(int avg, int ts);
-	
 }
 
 public class lambdaExpression {
@@ -26,7 +24,7 @@ public class lambdaExpression {
 
 //		Car1 obj=(int avg)->System.out.println("Driving..."+avg);
 		Car1 obj=(avg,ts)->System.out.println("Driving..."+avg+": "+ts);
-		obj.drive(20,50);
+		 
 	}
 
 }

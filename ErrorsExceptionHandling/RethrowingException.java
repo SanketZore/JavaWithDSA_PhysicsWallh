@@ -20,8 +20,10 @@ public class RethrowingException {
 
 		try {
 			if (num2 < 0) {
-				Exception e = new MyException("Negative Number");
-				throw e;
+//				Exception e = new MyException("Negative Number");
+//				throw e; 
+//					OR
+				throw new MyException("Negative Number");
 			} else {
 				int result = num1 / num2;
 				System.out.println(result);

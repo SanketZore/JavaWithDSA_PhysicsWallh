@@ -31,7 +31,6 @@ class Cargoplane extends Aeroplane{
 	
 	public void alert() {
 		// special-method which is only there in child class.
-
 			System.out.println("Alert...");
 	}
 }
@@ -47,7 +46,6 @@ class fighterPlane extends Aeroplane{
 	
 	public void alert() {
 	// special-method which is only there in child class.
-
 		System.out.println("Alert...");
 	}
 }
@@ -63,7 +61,6 @@ class PassengerPlane extends Aeroplane{
 	
 	public void alert() {
 	// special-method which is only there in child class.
-
 		System.out.println("Alert...");
 	}
 }

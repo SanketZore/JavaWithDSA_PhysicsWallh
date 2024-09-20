@@ -1,13 +1,5 @@
-ajava
+a
+java
 100false
-50.23
-X
-ajava
-100false
-50.23
-X
-ajava
-100
-false
 50.23
 X

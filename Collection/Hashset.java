@@ -19,16 +19,16 @@ public class Hashset {
 		 */
 		
 		HashSet hs=new HashSet();      // Released in 1.2V
+		hs.add(30);
 		hs.add(100);
 		hs.add(20);
-		hs.add(30);
 		hs.add(40);
 		System.out.println(hs);
 		
 		LinkedHashSet hs1=new LinkedHashSet();  // Preserves Order of Insertion.
+		hs1.add(30);
 		hs1.add(100);				// Released in 1.4V.
 		hs1.add(20);				// sub class of HashSet.
-		hs1.add(30);
 		hs1.add(40);
 		System.out.println(hs1);
 		

@@ -17,12 +17,11 @@ public class WriteOperationWithPrintWriter {
 		PrintWriter pw=new PrintWriter(fw);
 		pw.write(97);			//this will write ASCII value of 97 in file.
 //		pw.write("\nede")     // insted of this statement to get into new line .we can use bellow statement.
-		pw.println("java");
+		pw.println("\njava");
 		pw.print(100);  // this will store 100 not ASCII value.
 		pw.println(false);
 		pw.println(50.23);
 		pw.println('X');
-		
 		pw.close();
 		
 		

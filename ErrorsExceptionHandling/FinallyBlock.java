@@ -10,6 +10,7 @@ public class FinallyBlock {
 		{
 			System.out.print("Enter Number:");
 			num=sc.nextInt();
+//			System.exit(0);    // This will stop the further execution.
 		}
 		catch(InputMismatchException e) 
 		{

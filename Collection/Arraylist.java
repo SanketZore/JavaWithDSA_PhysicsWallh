@@ -36,7 +36,7 @@ public class Arraylist {
 		al3.add(1.02);
 		al3.add(1.03);
 		System.out.println(al3);
-		al3.addAll(2,al2);
+		al3.addAll(2,al2); // add al3 in al2 after 2nd index.
 //		System.out.println(al3);
 // we can add one collection to another collection.
 		

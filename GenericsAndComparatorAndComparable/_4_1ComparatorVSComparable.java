@@ -84,15 +84,12 @@ public class _4_1ComparatorVSComparable {
 		list1.add(st1);
 		list1.add(st2);
 		list1.add(st3);
-		System.out.println(list1);
-		
+		System.out.println(list1);		
 //		Collections.sort(list1);   // we get compile time error.
 		
 		
 		/*
 		 Comparator is a inbuild interface which consist of  one compare method.
-		 
-		 
 		 */
 //		Alpha a=new Alpha();  
 //		Collections.sort(list1,a);  

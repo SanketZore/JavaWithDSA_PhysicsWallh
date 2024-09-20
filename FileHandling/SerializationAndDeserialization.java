@@ -10,11 +10,11 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 
-class Cricketer implements Serializable{  // Serializable empty interface
+class Cricketer implements Serializable{  // Serializable is a empty interface(Marker Interface)-->(interface without abstract method)
 	
 	private static final long serialVersionUID = 1L;		// required to Deserialize.
 	private String name;
-	private int age;    // if transient key is used then that element does not participate in serialization.
+	transient private int age;    // if transient key is used then that element does not participate in serialization.
 	private int runs;
 	
 	public Cricketer(String name,int age,int runs) {
@@ -54,30 +54,30 @@ public class SerializationAndDeserialization {
 		
 		//--------------------Serialization --------------
 		
-//		Cricketer c=new Cricketer("sachin", 44, 30000);
-//		FileOutputStream fos=new FileOutputStream("pw.txt");
+		Cricketer c=new Cricketer("sachin", 44, 30000);
+		FileOutputStream fos=new FileOutputStream("pw.txt");
 //		BufferedOutputStream bos=new BufferedOutputStream(fos); // efficient
-//		ObjectOutputStream oos=new ObjectOutputStream(fos); // less efficient
-//		
-//		oos.writeObject(c);
+		ObjectOutputStream oos=new ObjectOutputStream(fos); // less efficient
+		
+		oos.writeObject(c);
 //		bos.flush(); 
 //		bos.close();
-//		System.out.println(c);
+		System.out.println(c);
 		
 		
 		//-------------------Deserialization--------------
 		
-		try {
-			FileInputStream fis = new FileInputStream("pw.txt");
-	           ObjectInputStream ois = new ObjectInputStream(fis);
-	           Cricketer cr = (Cricketer) ois.readObject();
-	           ois.close();
-
-	           System.out.println("Deserialization done!");
-	           cr.disp();
-		}catch(IOException | ClassNotFoundException e){
-            e.printStackTrace();
-		}
+//		try {
+//			FileInputStream fis = new FileInputStream("pw.txt");
+//	           ObjectInputStream ois = new ObjectInputStream(fis);
+//	           Cricketer cr = (Cricketer) ois.readObject();
+//	           ois.close();
+//
+//	           System.out.println("Deserialization done!");
+//	           cr.disp();
+//		}catch(IOException | ClassNotFoundException e){
+//            e.printStackTrace();
+//		}
 		   
 		
 		
