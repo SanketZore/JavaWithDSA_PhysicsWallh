@@ -14,8 +14,10 @@ public class ReadingDataUsingFileReader {
 		FileReader fd=new FileReader(file);
 		int i=fd.read();    // it will give each character decimal value.
 		
-//		System.out.println((char)i);
+//		System.out.println(i);			// gives ASCII value
+//		System.out.println((char)i);	// gives Char value
 		
+		System.out.println("------");
 		while(i!=-1) {
 //			System.out.println(i+" ----> "+(char)i);
 			System.out.print((char)i);

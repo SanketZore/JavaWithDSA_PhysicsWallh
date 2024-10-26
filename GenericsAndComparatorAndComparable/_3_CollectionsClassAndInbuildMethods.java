@@ -51,6 +51,7 @@ public class _3_CollectionsClassAndInbuildMethods {
 		int index=Collections.binarySearch(al3,50);  //Binarysearch is appliable only and only if the data is in sorted order.
 		System.out.println(index);
 		
+		
 		Collections.rotate(al3, 3);  // rotate index from 3rd index.
 		System.out.println(al3);
 		

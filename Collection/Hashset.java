@@ -23,6 +23,7 @@ public class Hashset {
 		hs.add(100);
 		hs.add(20);
 		hs.add(40);
+		System.out.println(hs.size());
 		System.out.println(hs);
 		
 		LinkedHashSet hs1=new LinkedHashSet();  // Preserves Order of Insertion.

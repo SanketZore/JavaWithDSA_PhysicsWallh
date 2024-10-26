@@ -68,7 +68,7 @@ public class SerializationAndDeserialization {
 		//-------------------Deserialization--------------
 		
 //		try {
-//			FileInputStream fis = new FileInputStream("pw.txt");
+//			   FileInputStream fis = new FileInputStream("pw.txt");
 //	           ObjectInputStream ois = new ObjectInputStream(fis);
 //	           Cricketer cr = (Cricketer) ois.readObject();
 //	           ois.close();

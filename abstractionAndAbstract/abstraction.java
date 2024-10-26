@@ -7,6 +7,10 @@ one abstract method.
 -We cannot create a Object of abstract class.
 -Constructor cannot be created as abstract. */
 
+
+//In simple words, abstraction is the concept of hiding complex details and showing only the essential features of an object or system. It’s like looking at a car: you can drive it without knowing exactly how the engine works.
+
+
 abstract class Aeroplane{
 	
 	abstract public void takeOff();
