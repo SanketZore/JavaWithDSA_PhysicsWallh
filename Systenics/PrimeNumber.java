@@ -19,7 +19,7 @@ public class PrimeNumber {
 			Boolean isPrime=true;	
 			
 			for(int i=3 ; i<=Math.sqrt(n) ; i+=2) {
-				if(n%i==0) {     // if mod value gets zero then it means there is another number lesser than given number which is divisible that given number.
+				if(n%i==0) {     // if mod value gets zero then it means there is another number lesser than given number which is divisible by that given number.
 //					System.out.println("Number is Not Prime Number");			
 //					isPrime=false;
 					return false;     

@@ -31,11 +31,16 @@ String Pool: Java maintains a pool of unique strings to conserve memory and impr
 //		System.out.println(s1==s3);
 //		System.out.println(s1.equals(s2));   // Content is checked
 //		System.out.println(s1.equals(s3));
+//		StringBuilder sb1= new StringBuilder("Sanket");
+//		StringBuilder sb2= new StringBuilder("Sanket");
+//		System.out.println(sb1==sb2);     // Reference is checked
+//		System.out.println(sb1.equals(sb2));   // Content is checked
 		
-//		String s4="Sam";
-//		String s5=new String("Sam");
-//		System.out.println(s4==s5);     // Reference is checked
-//		System.out.print(s4.equals(s5));   // Content is checked
+		String s4="Sam";
+//		String s5="Sam";            // this will give == as a true.
+		String s5=new String("Sam");
+		System.out.println(s4==s5);     // Reference is checked
+		System.out.print(s4.equals(s5));   // Content is checked
 		
 //		String s1=new String("GOKU");
 //		s1=s1.concat(" Zore");

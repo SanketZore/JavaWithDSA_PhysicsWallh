@@ -24,6 +24,12 @@ public class lambdaExpression {
 
 //		Car1 obj=(int avg)->System.out.println("Driving..."+avg);
 		Car1 obj=(avg,ts)->System.out.println("Driving..."+avg+": "+ts);
+		
+		
+		
+//		Car1 obj1=(avg,ts)->{
+//			System.out.println();
+//		};
 		 
 	}
 

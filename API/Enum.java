@@ -9,7 +9,7 @@ Enum concept Introduced in java 5
 
 enum --1.5version
  
-whenever we have value that cannot be chnaged through out the program than we use enum.
+whenever we have value that cannot be changed through out the program than we use enum.
  
 enum is pre-defined named concepts.
 
@@ -31,7 +31,7 @@ We dont have to use keyword like public,static.
 MON is variable, value and constant.
 MON,TUE,WED,... are our own datatypes, it is a type of week.
 
-we cannot create object of abstract class and interface  in similar way we cannot create object of enum.
+we cannot create object of abstract class and interface in similar way we cannot create object of enum.
 
 
 we can use enum to define a group of named constants.

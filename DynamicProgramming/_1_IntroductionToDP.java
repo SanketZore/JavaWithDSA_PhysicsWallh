@@ -7,9 +7,10 @@ import javax.sql.CommonDataSource;
 
 import com.jmu11.staticMethodandNonStatic;
 
+import Interface.interfaces;
 import stack.nextGreaterElement;
 
-public class IntroductionToDP {
+public class _1_IntroductionToDP {
 	
 	
 	// function calling -Recursive Approach
@@ -19,9 +20,10 @@ public class IntroductionToDP {
 	public static int fib(int n) {
 		if(n<=1) {
 			return n;
-		}else {
-			return fib(n-1)+fib(n-2);
 		}
+		
+		return fib(n-1)+fib(n-2);
+		
 	}
 	
 	
@@ -30,6 +32,7 @@ public class IntroductionToDP {
 	//Space complexity - stack space + hashtable- O(n)  //// Linear Complexity.
 	
 	public static Map<Integer,Long> memo=new HashMap<>();
+	
 	public static long fibMemo(int n) {
 		
 		//Base Case Condition
@@ -63,10 +66,28 @@ public class IntroductionToDP {
 		return fib[n];
 	}
 
+	
+	//function calling- Most Optimized Approach.
+	// time complexity- O(n)
+	// Space Complexity- O(1)
+	
+	public static long fibOpt(int n) {
+		long first=0,second=1,third;      // No use of any external data structure.
+		for(int i=2;i<=n;i++) {
+			third=first+second;
+			first=second;
+			second=third;
+		}
+		
+		return second;
+	}
+	
+	
 	public static void main(String[] args) {
 
 		int n=50;
-		System.out.println("The Fibonacci Series Value is: "+fibTab(n));
+//		System.out.println("The Fibonacci Series Value is: "+fibTab(n));
+		System.out.println("The Fibonacci Series Value is: "+fibOpt(n));
 		
 		
 	}

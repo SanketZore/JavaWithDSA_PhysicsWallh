@@ -1,8 +1,8 @@
 package inheritance;
 
 // Diamond shape problem
-// this method is used to call constructor of same class.
-// super method is used to call constructor of parent class.
+// this() method is used to call constructor of same class.
+// super() method is used to call constructor of parent class.
 // constructor doesn't get inherited.
 
 

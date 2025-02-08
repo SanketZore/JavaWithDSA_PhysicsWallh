@@ -82,7 +82,7 @@ public class MapInJava {
 		
 //		--------------TreeMap---------Code Not Working------------
 
-//		TreeMap tm=new TreeMap();
+//		TreeMap<Integer, String> tm=new TreeMap();
 ////		Integer i=new Integer(6); 
 ////		tm.put(i, "sam");  // key can be a Object.
 //		tm.put(4, "Rohan");

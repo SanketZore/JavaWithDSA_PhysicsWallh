@@ -39,6 +39,8 @@ public class IteratorListIterator {
 			System.out.println(itr.next());
 			}
 		
+		System.out.println("");
+		
 // ----------------Reverse Iteration--------------------
 		// Previous method is only in ListIterator, not in Iterator.
 		
